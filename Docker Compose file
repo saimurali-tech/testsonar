@@ -1,0 +1,9 @@
+version: “3.3”
+services:
+sonarqube:
+image: sonar.azurecr.io/sonar:v1
+ports:
+- “9000:9000”
+environment:
+- SONAR_JDBC_USERNAME=sonarqube
+- SONAR_JDBC_PASSWORD=StrongPassword
